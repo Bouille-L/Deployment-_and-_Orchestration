@@ -1,4 +1,4 @@
-# Nasdaq-100 ETF Explorer Web App Deployment-_and-_Orchestration
+# Nasdaq-100 ETF Explorer Web App Deployment and Orchestration
 
 ## Overview
 
