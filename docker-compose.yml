@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: "./Backend-django-REST"
+      dockerfile: Dockerfile
+    volumes:
+      - "./Backend-django-REST:/app"
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+
+  frontend:
+    build:
+      context: ./Frontend-Reactjs
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ./Frontend-Reactjs:/app
+      - /app/node_modules
+    environment:
+      - VITE_BACKEND_URL=http://backend:8000
+    depends_on:
+      - backend
