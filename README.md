@@ -42,7 +42,7 @@ Explain that the Dockerfiles are located in their respective frontend and backen
 
 ### Configuring Frontend-Backend Communication(in case local developement)
 
-Frontend URL Configuration: Set the your backend URL in your frontend component(ChartTQQQ, ChartQQQ, ChartSQQQ and Contactus, News)
+Frontend URL Configuration: Set your backend URL in the frontend component(ChartTQQQ, ChartQQQ, ChartSQQQ and Contactus, News)
 
 CORS Configuration: Ensure the backend is configured to accept requests from your frontend's local address(by adding the frontend's local URL to CORS_ALLOWED_ORIGINS in settings.py)
 
