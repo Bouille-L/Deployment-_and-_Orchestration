@@ -60,6 +60,3 @@ docker-compose up -d
 ## For further questions or contributions, feel free to contact me via Github Channel.
 
 
----
-
-This `README.md` template is tailored to your specific setup, focusing on the importance of the `docker-compose.yml` in orchestrating your application's containers. Adjust the content to fit your project's details and requirements, ensuring it provides a comprehensive guide for your team and any external contributors.
